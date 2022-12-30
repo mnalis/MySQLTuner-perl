@@ -3923,7 +3923,7 @@ sub mysqsl_pfs {
         infoprint "Sys schema is not installed.";
         push( @generalrec,
           mysql_version_ge( 10, 0 ) ?
-"Consider installing Sys schema from https://github.com/FromDual/mariadb-sys for MariaDB" :
+"Consider installing Sys schema from https://github.com/grooverdan/mariadb-sys for MariaDB" :
 "Consider installing Sys schema from https://github.com/mysql/mysql-sys for MySQL"
         ) unless ( mysql_version_le( 5, 6 ) );
 
